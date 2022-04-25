@@ -20,4 +20,9 @@ new Ingredient('potato',4)
   ngOnInit(): void {
   }
 
+
+  AddToIngredientArray(NewIngredient : Ingredient){
+
+this.ingredients.push(NewIngredient);
+  }
 }
