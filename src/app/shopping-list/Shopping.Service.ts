@@ -20,5 +20,20 @@ export class ShoppingService {
             
           }
 
+          AddIngredient(ingredient : Ingredient) {
+ 
+           this.ingredients.push(ingredient) ; 
+
+          }
+
+          AddToShoppingIngredient(ingredients : Ingredient[]) {
+
+             for (let ingredient of ingredients) {
+              this.AddIngredient(ingredient) ; 
+
+             }
+
+          }
+
         
 }
